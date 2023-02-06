@@ -1,0 +1,10 @@
+print("This is a program that will convert from a 12hr clock to a 24hr clock. First type in the hr then the min then if its am or pm")
+
+hr = int(input("please type in the hour"))
+min = int(input("please type in the min"))
+time = input("Please type in if your time is am or pm")
+
+if time == "am":
+    print("on a 24hr clock this time would be",hr*100 +min)
+if  time == "pm":
+    print("on a 24hr clock this time would be:",hr*100 +1200+min)
