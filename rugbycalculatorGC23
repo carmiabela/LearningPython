@@ -1,0 +1,18 @@
+#Create a scoring system for Rugby. (Rugby Union or league, your choice) This program should ask for the two team names and each Try, conversion & penalty kick should be recorded seperately, so that at the end of the game. Not only do we know the scores for the 2 teams but also how the points were scored. (25 points)
+
+name = ['','']
+points = [[0,0],[0,0]]
+
+for i in range(2):
+  a = input('wats ur team name?')
+  name[i]=a
+
+for i in range(2):
+  print(name[i])
+  points[i][0] = int(input("enter penalty kick points"))
+  print(points[i][0])
+  points[i][1] = int(input("enter conversion points"))
+  print(points[i][1])
+
+for i in range(2):
+  print(name[i],"penalty points",points[i][0],"conversion points",points[i][1])
