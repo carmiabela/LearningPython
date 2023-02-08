@@ -1,0 +1,11 @@
+a = [1,2,3,4,5]
+b = len(a)
+print(b)
+
+c = int(input("wat number 1-5"))
+def linearsearch():
+  for i in range(b):
+    if a[i] == c:
+     print(i)
+
+linearsearch()
