@@ -1,0 +1,14 @@
+dist = [96,156,245,99,342,467,867,234,902,155,107,222,290,560,456]
+flag=0
+
+a= len(dist)
+print(dist)
+while flag == 0:
+  flag=0
+  for i in range(a-1):
+    if dist[i] > dist[i+1]:
+      temp = dist[i]
+      dist[i] = dist[i+1]
+      dist[i+1] = temp
+      flag = flag+1
+    print(dist)
