@@ -1,0 +1,63 @@
+global lst
+def bubble(lst):
+  sorted=False
+  while not(sorted):
+    sorted=True
+    for i in range(len(lst)-1):
+      if lst[i]>lst[i+1]:
+        lst[i],lst[i+1]=lst[i+1],lst[i]
+        sorted=False
+  return(lst)
+
+lst = [[i for i in range(1,4)],["zH3624","VC1234","VC2349"],["Red","Red","pink"],[True,True,False],[39,100,50]]
+
+def run(lst): 
+  
+  fastest=[-1,''] #speed and the record number ie the fastest speed
+
+  for i in range(len(lst[4])):
+    if lst[4][i]>fastest[0]:
+      fastest[0]=lst[4][i]
+      fastest[1]=lst[0][i]
+      Count = i
+  print('Fastest speed is',fastest[0], "and car registration number is",lst[1][Count])
+
+  sum = 0 #Initialising variables for calculating average
+  average_speed = 0
+  count = 0
+  for x in range(len(lst[4])): # calculates average speed
+    sum+= lst[4][i]
+    
+    count = count+1
+  average_speed=sum/count
+  print("Average speed is", average_speed)
+
+  sorted=[]    # sorted record  
+  alph=bubble([i for i in lst[1]])
+  for i in alph:
+    sorted.append(lst[1].index(i)+1)
+
+    #returning the data
+  file=open("Road database.txt","a")
+
+  for i in sorted:
+      file.write(f"Record number:{lst[0][i-1]},Reg:{lst[1][i-1]},Color:{lst[2][i-1]},Right side drive?:{lst[3][i-1]},Speed:{lst[4][i-1]} \n")
+    
+#left and right hand 
+  LH_driver = 0
+  RH_driver = 0
+  for i in lst[3]: #counts number of left hand/right hand drivers
+    if i == True:
+      RH_driver += 1
+    else:
+      LH_driver +=1
+  print("Number of right hand drivers:",RH_driver,"\nNumber of left hand drivers:",LH_driver,sep="")
+    
+#total number of red volvos
+  red=0
+  for i in range(3):
+    if lst[2][i] =='Red' and lst[1][i][:2] == 'VC':
+      red = red+1
+  
+  print("Number of red volvos:",red)
+run(lst)
