@@ -1,0 +1,19 @@
+import time
+while True:
+
+    hrs = int(input('how many hrs are both of you allowed to play in total'))
+    a = (hrs*2)
+
+    for i in range(a):
+        def countdown(t):
+            while t > 0:
+                print(t)
+                t -= 1
+                time.sleep(1)
+
+            print("your time is up, the 30 minutes for the next sibling begins now")
+
+        seconds = 1800
+        seconds = int(seconds)
+        countdown(seconds)
+    print('the time allowed for any of you to play has ended','\n')
