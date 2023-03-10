@@ -1,0 +1,11 @@
+b = 'no'
+a =  int(input("enter a number from 0-100"))
+
+for i in range(33):
+  if a == 3*i:
+    print("you can divide this number by 3")
+    b = "yes"
+
+if b == "no":
+  print("your number can't be divided by 3")
+  
