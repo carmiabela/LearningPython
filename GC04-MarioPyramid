@@ -1,0 +1,4 @@
+a = int(input("number u want"))
+for i in range(a):
+  print("x"*i)
+    
