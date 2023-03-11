@@ -1,0 +1,58 @@
+b = input("write what u want to convert")
+c = len(b)
+
+for i in range(c):
+  if b[i]==' ':
+    print("       ",end=" ")
+  if b[i]=='a':
+    print(".- ",end=" ")
+  if b[i]=='b':
+    print("-...",end=" ")
+  if b[i]=='c':
+    print("-.-.",end=" ")
+  if b[i]=='d':
+    print("-..",end=" ")
+  if b[i]=='e':
+    print(".",end=" ")
+  if b[i]=='f':
+    print("..-.",end=" ")
+  if b[i]=='g':
+    print("--.",end=" ")
+  if b[i]=='h':
+    print("....",end=" ")
+  if b[i]=='i':
+    print("..",end=" ")
+  if b[i]=='j':
+    print(".---",end=" ")
+  if b[i]=='k':
+    print("-.-",end=" ")
+  if b[i]=='l':
+    print("-.-",end=" ")
+  if b[i]=='m':
+    print("--",end=" ")
+  if b[i]=='n':
+    print("-.",end=" ")
+  if b[i]=='o':
+    print("---",end=" ")
+  if b[i]=='p':
+    print(".--.",end=" ")
+  if b[i]=='q':
+    print("---.-",end=" ")
+  if b[i]=='r':
+    print(".-.",end=" ")
+  if b[i]=='s':
+    print("...",end=" ")
+  if b[i]=='t':
+    print("-",end=" ")
+  if b[i]=='u':
+    print("..-",end=" ")
+  if b[i]=='v':
+    print("...-",end=" ")
+  if b[i]=='w':
+    print(".--",end=" ")
+  if b[i]=='x':
+    print("-..-",end=" ")
+  if b[i]=='y':
+    print("-.--",end=" ")
+  if b[i]=='z':
+    print("--..",end=" ")
