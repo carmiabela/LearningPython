@@ -1,0 +1,6 @@
+print("hey imma clear screen")
+
+def clrscrn():
+  for i in range(1000):
+    print(" ")
+clrscrn()
