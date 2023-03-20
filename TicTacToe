@@ -1,0 +1,72 @@
+oxo = [['#', '#', '#'], ['#', '#', '#'], ['#', '#', '#']]
+print(*oxo)
+
+def print_oxo():
+	print("  0 1 2")
+	for i in range(3):
+    		print(i,*oxo[i]) 
+print_oxo()
+
+while True:
+  for i in range(3):
+    #xsideways win
+    if oxo[0][i]=='x' and oxo[1][i]=='x' and oxo[2][i]=='x' or oxo[i][0]=='x' and oxo[i][1]=='x' and oxo[i][2]=='x':
+      print("x won")
+    if (oxo[0][i]=='o' and oxo[1][i]=='o' and oxo[2][i]=='o') or (oxo[i][0]=='o' and oxo[i][1]=='o' and oxo[i][2]=='o'):
+      print("o won")
+      
+    if (oxo[0][0]=='x' and oxo[1][1]=='x' and oxo[2][2]=='x') or (oxo[0][2]=='x' and oxo[1][1]=='x' and oxo[2][0]=='x'):
+      print("x won")
+    if (oxo[0][0]=='o' and oxo[1][1]=='o' and oxo[2][2]=='o') or (oxo[0][2]=='o' and oxo[1][1]=='o' and oxo[2][0]=='o'):
+      print("o won")
+  
+  g = input("do you still want to play? yes/no")
+  if g=="no":
+    print("thank you for playing")
+    break
+
+      
+# X TURN
+  print("x turn")
+  a =  int(input("which column"))
+  b = int(input("which row"))
+#if ok 
+  if oxo[b][a]=="#":
+    oxo[b][a] = "x"
+  else:
+    print("plePleasease select again already chosen")
+    print("x turn")
+    a =  int(input("which column"))
+    b = int(input("which row"))
+    oxo[b][a] = "x"
+  print_oxo()
+
+  #who won
+  for i in range(3):
+    #xsideways win
+    if oxo[0][i]=='x' and oxo[1][i]=='x' and oxo[2][i]=='x' or oxo[i][0]=='x' and oxo[i][1]=='x' and oxo[i][2]=='x':
+      print("x won")
+    if (oxo[0][i]=='o' and oxo[1][i]=='o' and oxo[2][i]=='o') or (oxo[i][0]=='o' and oxo[i][1]=='o' and oxo[i][2]=='o'):
+      print("o won")
+      
+    if (oxo[0][0]=='x' and oxo[1][1]=='x' and oxo[2][2]=='x') or (oxo[0][2]=='x' and oxo[1][1]=='x' and oxo[2][0]=='x'):
+      print("x won")
+    if (oxo[0][0]=='o' and oxo[1][1]=='o' and oxo[2][2]=='o') or (oxo[0][2]=='o' and oxo[1][1]=='o' and oxo[2][0]=='o'):
+      print("o won")
+      
+# Y TURN
+  print("o turn")
+  c =  int(input("which column"))
+  d = int(input("which row"))
+
+  if oxo[d][c]=="#":
+    oxo[d][c] = "o"
+  else:
+    print("Please select again")
+    print("y turn")
+    c =  int(input("which column"))
+    d = int(input("which row"))
+    oxo[d][c] = "o"
+  print_oxo()
+
+#x side ways win
