@@ -1,0 +1,6 @@
+chara = ["mario","peach","donkey","mushroom","carmella"]
+
+
+NewCity = input("Please add a character ")
+chara.append(NewCity)
+print(chara)
