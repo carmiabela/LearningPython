@@ -1,0 +1,22 @@
+time = int(input("whats the time?(hour only)"))
+nam = input("am or pm?")
+if nam == "pm":
+  time = time+1
+timer = int(input("how mnay hours do you need?"))
+rn = time
+day = 0
+
+
+for i in range(timer):
+  print(rn)
+  rn = rn+1
+  if rn==24:
+    day = day+1
+    rn= 1
+
+if rn>12:
+  nam = "pm"
+else:
+  nam = "am "
+
+print("need to wait:",day,"days and",time,nam,"hours")
