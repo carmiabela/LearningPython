@@ -1,0 +1,8 @@
+#%d  prints any whole number. 
+#%s prints a string
+#%.2f prints a number to two decimal places
+ComputerAge=99.45
+
+ComputerName='Skynet'
+MyAge = int(input('What is your age?'))
+print('I am older than %.2f, because I am %.2f My name is %s.' % (MyAge,ComputerAge,ComputerName))
