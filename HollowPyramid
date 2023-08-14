@@ -1,0 +1,10 @@
+def pyramid(a):
+  print(" "*(a),"A")
+  for i in range(a):
+    print((" " * (a-i)) +"A " + (" "*2*i) + "A")
+  print("A "*(a+2))
+  
+
+if __name__ == "__main__":
+  pyramid(int(input("enter number of lines you want: "))-2)
+  
