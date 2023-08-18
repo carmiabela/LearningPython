@@ -1,0 +1,11 @@
+low = int(input("Lowest text range number: "))
+high = int(input("Highest text range number: "))
+
+
+def lengthCheck(lowerNumber,higherNumber):
+  while True:
+    a = input("enter a word withing your range")
+    if len(a)<=(high) and len(a)>=low:
+      print("done")
+      break
+print(lengthCheck(low,high))
