@@ -1,0 +1,18 @@
+import turtle
+a = 0
+turtle.circle(20,360,20)
+a=0
+def area(x):
+  for i in range(x):
+    b = float(input("enter radius to find area of circle"))
+    a = b*b*3.14
+    print("area is",a)
+    
+area(1)
+
+def circ(x):
+  c = float(input("enter radius to find circumference of circle"))
+  b = c*2*3.14
+  print("circumference is",b)
+
+circ(1)
