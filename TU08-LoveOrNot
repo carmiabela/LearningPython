@@ -1,0 +1,16 @@
+while True:
+    love_status = input ('Do you love me? y/n')
+    if love_status == "n" :
+        break
+
+while True:
+    love_status = input ('whats your favourite subject?')
+    if love_status == "computer science" or "cs" or "CS" or "Computer Science" :
+      print("good choice")
+      break
+
+
+number = float(input("enter a number"))
+while number < 15 or number > 20 :
+    print("Please enter a number between 15 and 20")
+    number = float(input("enter a number:"))
