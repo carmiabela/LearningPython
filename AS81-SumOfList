@@ -1,0 +1,9 @@
+def sumandproduct(list):
+  print("the sum is",sum(list))
+  for i in range(len(list)):
+    print(list[i])
+    product=list[i]*product
+  print("product is:",product)
+
+list=[2,5,3,23,5,24]
+sumandproduct(list)
