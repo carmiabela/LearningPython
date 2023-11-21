@@ -1,0 +1,11 @@
+a = 1
+while True:
+    MyNumber = input("Please enter a number: ")
+    try:
+        valid_number = int(MyNumber)
+        break
+    except ValueError:
+        print("Seriously, the",a," you didn't read the instructions. \nI asked for a number...")
+        a=a+1
+ 
+print(valid_number)
