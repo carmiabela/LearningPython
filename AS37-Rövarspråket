@@ -1,0 +1,12 @@
+a = input("input everything")
+consanants = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w"]
+consanants2 = ['x','y','z']
+
+def Rövarspråket(input):
+  for i in range(len(input)):
+    if input[i] in consanants or input[i] in consanants2:
+      print(input[i],"o",input[i],end="",sep='')
+    else:
+      print(input[i],end="")
+
+Rövarspråket(a)
