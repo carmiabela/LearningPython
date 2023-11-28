@@ -1,0 +1,15 @@
+#number of vowels
+
+vowels = ["a","e","i","o","u"]
+
+def GotVowels(word):
+  amount = 0
+  for letter in word:
+    if letter in vowels:
+      amount+=1
+      
+  return amount
+      
+
+
+print(GotVowels(input("enter word")))
