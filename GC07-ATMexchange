@@ -1,0 +1,14 @@
+#Pooja would like to withdraw X $US from an ATM. The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US. Calculate Pooja's account balance after an attempted transaction.
+
+while True:
+  a=0
+  b = int(input("enter money u want 2 exchange"))
+  for i in range(300):
+    if b== i*5 :
+      print(f"here's ${b-0.5}")
+      a=1
+  if a==0:
+    print("not a multiple of 5 try again")
+  
+    
+    
